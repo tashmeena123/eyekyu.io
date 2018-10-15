@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+    <head>
+      <title>Quiz</title>
+      <link rel="stylesheet" type="text/css" href="sty.css">
+    </head>
+    <body>
+      <div class="tab">
+        <button style="font-size: 25px;color: white;background-color:black;text-decoration:bold;">QuizUp!</button>
+        <button class="tab button" onclick="location.href='home.html'">Home</button>
+        <button class="tab button" onclick="location.href='login.html'">Login</button>
+        <button class="tab button" onclick="location.href='signup.html'">SignUp</button>
+        <button class="tab button" onclick="location.href='aboutus.html'">About us</button>
+        <button class="tab button" onclick="location.href='help.html'">Help</button>
+    </div><br><br>
+      <h1>COA Quiz</h1>
+          <main>
+            <form class="questionForm" id="q1" data-question="1">
+              <h3>A basic instruction that can be interpreted by computer has</h3>
+              <ul>
+                <li><input type="radio" name="q1" value="a"> Operand and Opcode</li>
+                <li><input type="radio" name="q1" value="b"> Decoder and Accumulator</li>
+                <li><input type="radio" name="q1" value="c"> Sequence Register and Decoder</li>
+                <li><input type="radio" name="q1" value="d"> None of the Above</li>
+              </ul>
+              <button id="submit" class="btn">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q2" data-question="2">
+              <h3>2. In generic microprocessor instruction time is:</h3>
+              <ul>
+                <li><input type="radio" name="q2" value="a"> Shorter than Machine Cycle Time</li>
+                <li><input type="radio" name="q2" value="b"> Larger than Machine Cycle Time</li>
+                <li><input type="radio" name="q2" value="c"> Ten times Machine Cycle Time</li>
+                <li><input type="radio" name="q2" value="d"> Exaclty same as Machine Cycle Time</li>
+              </ul>
+              <button id="submit" class="btn">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q3" data-question="3">
+              <h3>3. Decreasing response time almost always:</h3>
+              <ul>
+                <li><input type="radio" name="q3" value="a"> Improves throughput</li>
+                <li><input type="radio" name="q3" value="b"> Decreases the throughput</li>
+                <li><input type="radio" name="q3" value="c"> No change in the throughput</li>
+                <li><input type="radio" name="q3" value="d"> Throughput is always constant</li>
+              </ul>
+              <button id="submit" class="btn">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q4" data-question="4">
+              <h3>4.Performance of a computer can be measured using:</h3>
+              <ul>
+                <li><input type="radio" name="q4" value="a"> Clock Period</li>
+                <li><input type="radio" name="q4" value="b"> Cycles per Instruction</li>
+                <li><input type="radio" name="q4" value="c"> Throughput</li>
+                <li><input type="radio" name="q4" value="d"> All of the Above</li>
+              </ul>
+              <button id="submit" class="btn">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q5" data-question="5">
+              <h3>5. Every instruction cycle consists of:</h3>
+              <ul>
+                <li><input type="radio" name="q5" value="a"> Fetch Cycle</li>
+                <li><input type="radio" name="q5" value="b"> Execute Cycle</li>
+                <li><input type="radio" name="q5" value="c"> Both 1 and 2</li>
+                <li><input type="radio" name="q5" value="d"> None of the above</li>
+              </ul>
+              <button id="submit" class="btn">Submit</button>
+            </form>
+
+            <div id="result" class="result"></div><br>
+            <h1>Total 5 questions</h1>
+          </main>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="quiz2.js"></script>
+    </body>
+</html>
